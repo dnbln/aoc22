@@ -33,7 +33,7 @@ def exe_move_2(stacks, move):
     stacks[move[2]-1].append(top)
     return stacks
 
-moves = [[int(x) for x in l.split( )[1:6:2]] for l in split[1].splitlines()]
+moves = [[int(x) for x in l.split(' ')[1:6:2]] for l in split[1].splitlines()]
 
 stacks_1 = [s.copy() for s in stacks]
 stacks_2 = [s.copy() for s in stacks]
