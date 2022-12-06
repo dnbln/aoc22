@@ -5,7 +5,7 @@ s = s.splitlines()[0] # if it has a newline character at the end, ignore it
 
 def fp(s, x):
     i = x
-    while i < len(s):
+    while i <= len(s):
         b = s[i-x:i]
         if len(set(b)) == x:
             break
